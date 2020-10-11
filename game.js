@@ -1,17 +1,3 @@
-<html>
-<canvas id="gameCanvas" width="800" height="600"></canvas>
-
-<style>
-    #gameCanvas {
-        text-align: center;
-    }
-
-    canvas {
-        display: inline;
-    }
-</style>
-
-<script>
 var canvas;
 var canvasContext;
 var ballX = 800/2;
@@ -181,6 +167,3 @@ function drawBall(centreX, centreY, radius, ballColor){
     canvasContext.arc(centreX, centreY, radius, 0, Math.PI*2, true);
     canvasContext.fill();
 }
-
-</script>
-</html>
