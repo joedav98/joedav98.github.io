@@ -5,7 +5,7 @@
     #gameCanvas {
         text-align: center;
     }
-    
+
     canvas {
         display: inline;
     }
@@ -48,7 +48,7 @@ window.onload = function(){
     var framesPerSecond = 30;
     setInterval(callEverything, 1000/framesPerSecond);
 
-    canvas.addEventListener('click', 
+    canvas.addEventListener('click',
         function(evt){
             if(winScreen){
                 playerScore = 0;
@@ -87,7 +87,7 @@ function collisionDetection(){
     if(ballY > paddleY - ballRadius && ballY < paddleY + PADDLE_HEIGHT + ballRadius){
         if(ballX < PADDLE_THICKNESS + ballRadius){
             ballXChange = -ballXChange;
-            
+
             var deltaY = ballY - (paddleY+PADDLE_HEIGHT/2);
             ballYChange = deltaY * 0.4;
             console.log('Collision');
@@ -98,7 +98,7 @@ function collisionDetection(){
         if(ballX > canvas.width - PADDLE_THICKNESS - ballRadius){
             ballXChange = -ballXChange;
             console.log('Computer collision');
-            
+
             var deltaY = ballY - (computerY+PADDLE_HEIGHT/2);
             ballYChange = deltaY * 0.4;
             collisionCount++;
@@ -142,7 +142,7 @@ function displayWinScreen(){
 }
 
 function drawNet(){
-    for(var i = 0; i < canvas.height; i += 40){
+    for(var i = 0; i < canvas.height; i += 20){
         drawRect(canvas.width/2-1, i, 2, 20, 'white');
     }
 }
