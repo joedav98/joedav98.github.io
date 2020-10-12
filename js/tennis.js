@@ -1,4 +1,3 @@
-<canvas id="gameCanvas" width="800" height="600"></canvas>
 var canvas;
 var canvasContext;
 var ballX = 800/2;
