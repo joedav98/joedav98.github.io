@@ -1,13 +1,16 @@
 <!doctype html>
 <html>
 <canvas id="gameCanvas" width="800" height="600"></canvas>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <style>
-    #gameCanvas {
+    #gameCanvas{
         text-align: center;
     }
-
     canvas {
-        display: inline;
+        display: inline-block;
     }
 </style>
 
@@ -184,6 +187,6 @@ function drawBall(centreX, centreY, radius, ballColor){
 
 </script>
 <div>
-  <input type=button onClick="location.href='index.html'" value='Back to main page'>
+  <input id="linkbutton" type=button onClick="location.href='index.html'" value='Back to main page'>
 </div>
 </html>

@@ -5,17 +5,17 @@
     <title>Portfolio of Joel David Lim Jianyi</title>
   </head>
   <body>
-    <h1 style="background-color:DodgerBlue"> Joel David Lim Jianyi </h1>
+    <h1 id= "title"> Joel David Lim Jianyi </h1>
     <h2> Hi there, this is me</h2>
     <div class = "tab">
-      <button class = "tablinks" onclick = "openCity(event, 'London')">London</button>
-      <button class = "tablinks" onclick = "openCity(event, 'Paris')">Paris</button>
-      <button class = "tablinks" onclick = "openCity(event, 'Game')">Game</button>
+      <button class = "tablinks" onclick = "openTab(event, 'Qualifications')">Qualifications</button>
+      <button class = "tablinks" onclick = "openTab(event, 'Paris')">Paris</button>
+      <button class = "tablinks" onclick = "openTab(event, 'Game')">Game</button>
     </div>
 
-    <div id = "London" class = "tabcontent">
-      <h3> London </h3>
-      <p> London is the capital city of England. </p>
+    <div id = "Qualifications" class = "tabcontent">
+      <h3 id = "heading1"> My Education </h3>
+      <p> Lorem Ipsum </p>
     </div>
 
     <div id = "Paris" class = "tabcontent">
@@ -24,9 +24,9 @@
     </div>
 
     <div id = "Game" class = "tabcontent">
-      <h3> Tennis </h3>
+      <h3 id = "heading1"> Tennis </h3>
       <p> This is a tennis game I have made using simple JavaScript in my spare time, do check it out! </p>
-      <input type=button onclick="location.href='game.html'" value = "Click here to try it out!"></button>
+      <input id="linkbutton" type=button onclick="location.href='game.html'" value = "Click here to try it out!"></button>
     </div>
     <script src = "functions.js"></script>
   </body>
