@@ -3,6 +3,15 @@
   src: url(https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap)
 }
 
+head{
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;
