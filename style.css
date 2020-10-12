@@ -1,3 +1,11 @@
+/* Style the gameCanvas */
+#gameCanvas {
+    text-align: center;
+}
+
+canvas {
+    display: inline;
+}
 /* Style the tab */
 .tab {
   overflow: hidden;
