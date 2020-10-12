@@ -25,6 +25,10 @@
   font-size: 20px;
 }
 
+address {
+  display: block;
+  font-style: bold;
+}
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
