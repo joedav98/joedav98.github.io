@@ -5,12 +5,13 @@
     <title>Portfolio of Joel David Lim Jianyi</title>
   </head>
   <body>
-    <h1 id= "title"> Joel David Lim Jianyi </h1>
-    <h2> Hi there, this is me</h2>
+    <h1 id = "title"> Joel David Lim Jianyi </h1>
+    <h3 id = "heading1"> Hi there, this is me</h2>
     <div class = "tab">
       <button class = "tablinks" onclick = "openTab(event, 'Qualifications')">Qualifications</button>
       <button class = "tablinks" onclick = "openTab(event, 'Paris')">Paris</button>
       <button class = "tablinks" onclick = "openTab(event, 'Game')">Game</button>
+      <button calss = "tablinks" onclick = "openTab(event, 'Contact')"> Contact Me </button>
     </div>
 
     <div id = "Qualifications" class = "tabcontent">
@@ -27,6 +28,17 @@
       <h3 id = "heading1"> Tennis </h3>
       <p> This is a tennis game I have made using simple JavaScript in my spare time, do check it out! </p>
       <input id="linkbutton" type=button onclick="location.href='game.html'" value = "Click here to try it out!"></button>
+    </div>
+
+    <div id = "Contact" class = "tabcontent">
+      <h3 id = "heading1"> Get in touch with me! <h3>
+        <address>
+          Written by <a href="mailto:joedav98@gmail.com">Joel</a>.<br>
+          Visit us at:<br>
+          Example.com<br>
+          Box 564, Disneyland<br>
+          USA
+        </address>
     </div>
     <script src = "functions.js"></script>
   </body>
