@@ -10,7 +10,7 @@
     <div class = "tab">
       <button class = "tablinks" onclick = "openTab(event, 'Qualifications')">Qualifications</button>
       <button class = "tablinks" onclick = "openTab(event, 'Media')">Media</button>
-      <button class = "tablinks" onclick = "openTab(event, 'Coding')">Code</button>
+      <button class = "tablinks" onclick = "openTab(event, 'Coding')">Coding</button>
       <button calss = "tablinks" onclick = "openTab(event, 'Contact')"> Contact Me </button>
     </div>
 
@@ -24,7 +24,7 @@
       <p> Paris is the capital of France. </p>
     </div>
 
-    <div id = "Code" class = "tabcontent">
+    <div id = "Coding" class = "tabcontent">
       <h3 id = "heading1"> Tennis </h3>
       <p> This is a tennis game I have made using simple JavaScript in my spare time, do check it out! </p>
       <input id="linkbutton" type=button onclick="location.href='game.html'" value = "Click here to try it out!"></button>
@@ -32,11 +32,20 @@
 
     <div id = "Contact" class = "tabcontent">
       <h3 id = "heading1"> Get in touch with me! <h3>
-        <address>
-          I can be contacted at <br>
-          <a href="mailto:joedav98@gmail.com">joedav98@gmail.com</a>,<br>
-          or <a href="mailto:jd-lim@hotmail.com">jd-lim@hotmail.com</a>.<br>
-        </address>
+        <table>
+          <tr>
+            <td>Email</td>
+            <td><a href="mailto:joedav98@gmail.com">joedav98@gmail.com</a></td>
+          </tr>
+          <tr>
+            <th>Whatsapp</th>
+            <td><a href="https://wa.me/6596897951">+65 96897951</a></td>
+          </tr>
+          <tr>
+            <th>Telegram</th>
+            <td><a href="https://t.me/joedav98">@joeda98</a></td>
+          </tr>
+        </table>
     </div>
     <script src = "functions.js"></script>
   </body>
