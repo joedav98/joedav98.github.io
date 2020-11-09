@@ -7,10 +7,15 @@
   color: white;
 }
 
+#profile-pic {
+  float: right;
+  height:280px;
+}
+
 #title {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
   font-size: 72px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -25,6 +30,7 @@
 }
 /* Style the tab */
 .tab {
+  padding-top: 30px;
   overflow: hidden;
   background-color: inherit;
 }
