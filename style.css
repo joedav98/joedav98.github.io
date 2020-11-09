@@ -48,7 +48,7 @@ body {
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.6);
   float: right;
   border: none;
   outline: none;
@@ -60,20 +60,18 @@ body {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 /* Style the tab content */
 .tabcontent {
-  background-color: rgba(0, 0, 0, 0,1);
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
 }
 
