@@ -10,12 +10,13 @@
 #profile-pic {
   float: right;
   height:280px;
+  padding-left: 30px;
 }
 
 #title {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 700;
-  text-align: left;
+  text-align: right;
   font-size: 72px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
