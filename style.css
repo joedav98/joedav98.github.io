@@ -36,7 +36,7 @@
 }
 
 #contactbutton{
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   color: white;
   width: 100%;
   padding: 5px;
@@ -45,7 +45,7 @@
 }
 
 #contactbutton:hover{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 body {
@@ -79,7 +79,7 @@ body {
 /* Style the tab content */
 .tabcontent {
   display: none;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 6px 12px;
   border-top: none;
 }
