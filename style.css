@@ -8,12 +8,13 @@
 #title {
   text-align: center;
   font-size: 72px;
+  font-weight: bold;
   -webkit-text-stroke-width: 0.02px;
   -webkit-text-stroke-color: black;
 }
 
 #heading1{
-  font-size: 32px;
+  font-size: 48px;
   font-weight: bold;
   -webkit-text-stroke-width: 0.01px;
   -webkit-text-stroke-color: black;
