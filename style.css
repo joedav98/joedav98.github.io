@@ -16,8 +16,8 @@
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: inherit;
+  text-align: right;
 }
 
 #linkbutton{
@@ -26,14 +26,12 @@
 }
 
 #contactbutton{
-  padding: 10px;
+  width: 100%;
+  padding: 5px;
   font-size: 20px;
+  text-align: left;
 }
 
-address {
-  display: block;
-  font-style: bold;
-}
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
@@ -65,10 +63,10 @@ address {
 }
 
 table, th, td {
-  border: 1px solid black;
+  border: 3px solid black;
   border-collapse: collapse;
 }
 
 th, td {
-  padding: 25px;
+  padding: 10px;
 }
