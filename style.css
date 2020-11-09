@@ -57,3 +57,7 @@ address {
   border: 1px solid #ccc;
   border-top: none;
 }
+
+table, th, td {
+  border: 1px solid black;
+}
