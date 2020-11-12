@@ -56,6 +56,11 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+#ytembed{
+  padding: 10px;
+  float: center;
+}
+
 body {
   background-image: url('bg.jpg');
   background-repeat: no-repeat;
