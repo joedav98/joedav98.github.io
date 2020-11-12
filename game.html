@@ -1,20 +1,8 @@
 <!doctype html>
 <html>
 <canvas id="gameCanvas" width="800" height="600"></canvas>
-<head>
-  <link rel="stylesheet" href="style.css">
-</head>
 
 <style>
-    #gameCanvas{
-        text-align: center;
-    }
-    canvas {
-        display: inline-block;
-    }
-    script {
-      margin: auto;
-    }
 </style>
 
 <script>
@@ -31,6 +19,7 @@ var computerY = 400;
 const PADDLE_HEIGHT = 100;
 const PADDLE_THICKNESS = 10;
 var winScreen = false;
+var startScreen = true;
 var playerScore = 0;
 var computerScore = 0;
 var collisionCount = 0;
@@ -56,6 +45,10 @@ window.onload = function(){
 
     canvas.addEventListener('click',
         function(evt){
+            if(startScreen){
+              startScreen = false;
+              console.log('Click');
+            }
             if(winScreen){
                 playerScore = 0;
                 computerScore = 0;
@@ -73,9 +66,9 @@ window.onload = function(){
 function computerMove(){
     var computerYCenter = computerY + PADDLE_HEIGHT/2;
     if(computerYCenter < ballY - 20){
-        computerY += 9;
+        computerY += 8;
     } else if(computerYCenter > ballY + 20){
-        computerY -= 9;
+        computerY -= 8;
     }
 }
 
@@ -124,6 +117,12 @@ function ballReset(){
     ballX = canvas.width/2;
     ballY = canvas.height/2;
     ballXChange = -ballXChange;
+    if(ballYChange > 0){
+      ballYChange = -10;
+    }
+    else if (ballYChange < 0){
+      ballYChange = 10;
+    }
     collisionCount = 0;
     computerY = (canvas.height-PADDLE_HEIGHT)/2;
     scoreKeeper();
@@ -138,6 +137,13 @@ function scoreKeeper(){
         winScreen = true;
         winner = 'Computer';
     }
+}
+
+function displayStartScreen(){
+    drawRect(0, 0, canvas.width, canvas.height, 'black');
+    canvasContext.font = "20px Arial";
+    canvasContext.fillStyle = 'white';
+    canvasContext.fillText("Click to begin!", 350, 200);
 }
 
 function displayWinScreen(){
@@ -168,6 +174,10 @@ function drawText(){
 }
 
 function callEverything(){
+    if(startScreen){
+      displayStartScreen();
+      return;
+    }
     if(winScreen){
         displayWinScreen();
         return;
@@ -189,7 +199,4 @@ function drawBall(centreX, centreY, radius, ballColor){
 }
 
 </script>
-<div>
-  <input id="linkbutton" type=button onClick="location.href='index.html'" value='Back to main page'>
-</div>
 </html>
