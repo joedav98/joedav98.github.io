@@ -57,9 +57,10 @@
 }
 
 body {
-  background-color: white;
-  padding-left: 200px;
-  padding-right: 200px;
+  background = linear-gradient(35deg, #CCFFFF, #FFCCCC);
+  width: 70%;
+  padding-left: 300px;
+  border-radius: 20px;
 }
 
 /* Style the buttons that are used to open the tab content */
